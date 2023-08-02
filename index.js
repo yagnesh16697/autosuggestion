@@ -1,10 +1,13 @@
 const express = require("express");
 const { Client } = require("@elastic/elasticsearch");
 const { MongoClient } = require("mongodb");
+const cors = require("cors");
 
 // Create an Express app
 const app = express();
 const port = 3000;
+
+app.use(cors());
 
 // Connect to MongoDB
 const mongoClient = new MongoClient("mongodb://localhost:27028");
@@ -88,6 +91,7 @@ app.get("/suggestions", async (req, res) => {
             fields: suggestionFields,
           },
         },
+        size: 5, // Limit the result to six suggestions
       },
     });
     const suggestions = response.hits.hits.map((hit) => hit._source);
