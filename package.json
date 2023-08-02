@@ -1,0 +1,25 @@
+{
+  "name": "autosuggestion",
+  "version": "1.0.0",
+  "description": "AutoSuggest-MERN-Elasticsearch: A powerful GitHub repo showcasing an intelligent autosuggestion feature with Node, React, Elasticsearch, and MongoDB.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yagnesh16697/autosuggestion.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yagnesh16697/autosuggestion/issues"
+  },
+  "homepage": "https://github.com/yagnesh16697/autosuggestion#readme",
+  "dependencies": {
+    "@elastic/elasticsearch": "^8.9.0",
+    "express": "^4.18.2",
+    "mongodb": "^5.7.0"
+  }
+}
